@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './index.css';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
@@ -133,7 +134,11 @@ async function init() {
 
     <React.StrictMode>
       <Provider store={store}>
-        <ReduxDataDictionary url={'google.com'} />
+        <BrowserRouter>
+          <Switch>
+            <Route path="/data-dictionary" component={ReduxDataDictionary} />
+          </Switch>
+        </BrowserRouter>
       </Provider>
     </React.StrictMode>,
     document.getElementById('root')
