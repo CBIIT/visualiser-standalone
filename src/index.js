@@ -136,7 +136,7 @@ async function init() {
       <Provider store={store}>
         <BrowserRouter>
           <Switch>
-            <Route path="/data-dictionary" component={ReduxDataDictionary} />
+            <Route path="/" component={ReduxDataDictionary} />
           </Switch>
         </BrowserRouter>
       </Provider>
