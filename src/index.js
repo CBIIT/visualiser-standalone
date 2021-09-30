@@ -136,7 +136,7 @@ async function init() {
       <Provider store={store}>
         <BrowserRouter basename={'/data-dictionary'}>
           <Switch>
-            <Route path='/' component={ReduxDataDictionary} />
+            <Route path={`${process.env.PUBLIC_URL}/`} component={ReduxDataDictionary} />
           </Switch>
         </BrowserRouter>
       </Provider>
