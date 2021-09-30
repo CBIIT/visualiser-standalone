@@ -22,14 +22,14 @@ const getData = async (url) => {
 async function init() {
 
   const store = createStore(reducers);
-  console.log(process.env.REACT_APP_MODEL_URL);
-  console.log(process.env.REACT_APP_MODEL_PROPS_URL);
+  // console.log(process.env.REACT_APP_MODEL_URL);
+  // console.log(process.env.REACT_APP_MODEL_PROPS_URL);
 
   // let url = 'https://wfy1997.s3.amazonaws.com/schema.json';
   // if (window.location.hash) url = window.location.hash.slice(1);
 
-  const icdcMData = await getData(process.env.REACT_APP_MODEL_URL);
-  const icdcMPData = await getData(process.env.REACT_APP_MODEL_PROPS_URL);
+  const icdcMData = await getData('https://raw.githubusercontent.com/CBIIT/icdc-model-tool/master/model-desc/icdc-model.yml');
+  const icdcMPData = await getData('https://raw.githubusercontent.com/CBIIT/icdc-model-tool/master/model-desc/icdc-model-props.yml');
 
   //translate the json file here
   const dataList = {};
