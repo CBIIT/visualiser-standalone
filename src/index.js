@@ -134,9 +134,9 @@ async function init() {
 
     <React.StrictMode>
       <Provider store={store}>
-        <BrowserRouter>
+        <BrowserRouter basename={'/data-dictionary'}>
           <Switch>
-            <Route path="/data-dictionary" component={ReduxDataDictionary} />
+            <Route path='/' component={ReduxDataDictionary} />
           </Switch>
         </BrowserRouter>
       </Provider>

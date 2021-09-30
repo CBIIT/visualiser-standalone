@@ -2,6 +2,7 @@
   "name": "standalone-data-dictionary",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://caninecommons-dev.cancer.gov/data-dictionary",
   "dependencies": {
     "@apidevtools/json-schema-ref-parser": "^9.0.1",
     "@gen3/ui-component": "^0.5.1",
